@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(255, 255, 238);
+}
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #24252a;
+}
+
+/* Detter er for navigation baren for alle sidene */
+.menu_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 0px;
+  background-color: rgb(225, 229, 207);
+  position: fixed;
+  max-height: 100%;
+  opacity: 1;
+  min-width: 100%;
+  z-index: 1;
+}
+
+/* For Ford logoen som dender deg tilbake til hjemsiden */
+.logo {
+  cursor: pointer;
+  padding: 0;
+  height: 124px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.logo:hover {
+  background-color: #989376;
+}
+
+/* Navigation links som er satt i en liste */
+.nav__links {
+  display: inline;
+  list-style: none;
+  cursor: pointer;
+  padding: 20px;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav_links {
+  text-decoration: none;
+  margin-left: 5px;
+}
+/* Også en del av navigation links*/
+li {
+  padding: 20px;
+  display: inline;
+  z-index: 0;
+  text-decoration: none;
+}
+
+.nav_links:hover {
+  background-color: #989376;
+  border-radius: 8px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links:hover a {
+  color: white;
+}
+
+/* For contact button*/
+.cta {
+  height: 46px;
+  width: 102px;
+  background-color: rgb(36, 36, 227);
+  border: none;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: rgb(255, 255, 255);
+}
+
+.cta:hover {
+  background-color: rgb(13, 23, 116);
+}
+
+.ford-capri-homepage {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: -1;
+  top: 80px;
+}
+
+.capri {
+  position: absolute;
+  top: 160px;
+  left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 0;
+}
+
+.ford-capri-bildebutton {
+  position: absolute;
+  top: 194px;
+  left: 16px;
+}
+/* For les mer knappen på homepagen ford capri*/
+.capri_btn {
+  background-color: rgb(36, 36, 227);
+  color: rgb(255, 255, 255);
+  border: none;
+  text-decoration: none;
+  height: 32px;
+  width: 132px;
+  border-radius: 16px;
+  font-size: 16px;
+  margin: none;
+}
+
+.capri_btn:hover {
+  background-color: rgb(13, 23, 116);
+}
+
+.fordcapri_h1 {
+  min-width: 100%;
+}
+/* Ford Capri sin egen nettside hovedbilde og tekst*/
+.capri_h1 {
+  position: absolute;
+  top: 720px;
+  left: 570px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+/* For prisen til ford capri*/
+.pris_capri {
+  text-align: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 32px;
+}
+/* Ford Capri sin header på sin side */
+.ford_capri_sportsbil1 {
+  margin-left: 60px;
+  margin-top: 20px;
+  font-size: 48px;
+  text-align: center;
+  color: #133a7c;
+  background-color: rgb(235, 235, 218);
+  border-radius: 5px;
+  border: 1px;
+  border: solid;
+  border-color: #133a7c;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: rgb(225, 229, 207);
+}
+
+.footerContact {
+  position: relative;
+  top: 80px;
+}
+
+.footerAbout {
+  position: relative;
+  top: 250px;
+}
+
+.footerCars {
+  position: relative;
+  top: 250px;
+}
+
+.footerContainer {
+  max-width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.SocialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.SocialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.SocialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.SocialIcons a i:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 20px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footerNav ul li a {
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.contactInfo {
+  position: relative;
+  top: 180px;
+
+  margin-left: 10px;
+}
+
+.Kundeservice_ford {
+  position: relative;
+  z-index: -1;
+  left: 800px;
+  top: 80px;
+  border-radius: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(250, 250, 250);
+  width: 400px;
+}
+
+.about_text {
+  position: relative;
+  top: 200px;
+  width: 400px;
+  margin-left: 35%;
+  background-color: rgb(235, 235, 218);
+  border-radius: 10px;
+  padding: 20px;
+  border-color: #133a7c;
+  font-size: 20px;
+}
+
+.about_h1 {
+  color: #133a7c;
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.ford-explorer {
+  position: relative;
+}
+
+.ford-explorer-homepage {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: -10;
+}
+
+.explorer {
+  position: absolute;
+  font-weight: bold;
+  font-size: 24px;
+  z-index: 0;
+  color: white;
+}
+
+.explorer_btn {
+  background-color: rgb(36, 36, 227);
+  color: rgb(255, 255, 255);
+  border: none;
+  text-decoration: none;
+  height: 32px;
+  width: 132px;
+  border-radius: 16px;
+  font-size: 16px;
+  margin: none;
+  cursor: pointer;
+}
+
+.ford-explorer-bildebutton {
+  position: absolute;
+  top: -45rem;
+  left: 16px;
+}
+.explorer_text {
+  position: relative;
+  top: -47rem;
+}
+
+.explorer_btn:hover {
+  background-color: rgb(13, 23, 116);
+}
+
+/*Start av capri bilen i en liste på Cars Underside */
+.capri_car {
+  top: 14.8rem;
+  position: relative;
+  margin-left: 40%;
+}
+
+.capri_cars {
+  height: 130px;
+}
+
+.capri_h4 {
+  color: black;
+}
+
+.capri_bygg_btn {
+  background-color: rgb(36, 36, 227);
+  width: 160px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.capri_bygg {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.capri_bygg_btn:hover {
+  background-color: rgb(13, 23, 116);
+}
+.capri_bygg_btn a:hover {
+  background-color: rgb(13, 23, 116);
+}
+
+.capri_price_text {
+  font-size: 16px;
+}
+
+.capri_price_number {
+  font-size: 20px;
+}
+
+.explorer_car {
+  z-index: 1;
+  max-width: 100%;
+  margin-left: 18%;
+}
+
+.explorer_cars {
+  height: 140px;
+}
+
+.explorer_h4 {
+  margin-right: 1%;
+}
+
+.explorer_bygg_btn {
+  background-color: rgb(36, 36, 227);
+  width: 160px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.explorer_btn {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.explorer_bygg_btn:hover {
+  background-color: rgb(13, 23, 116);
+}
+
+.explorer_price_text {
+  font-size: 16px;
+}
+
+.explorer_price_number {
+  font-size: 20px;
+}
+
+/* Dette er dropdown button */
+.dropbtn {
+  background-color: rgb(225, 229, 207);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 8px;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: rgb(225, 229, 207);
+  border-radius: 8px;
+}
+
+.dropdown-content a:hover {
+  background-color: #989376;
+  transition: ease-in-out 0.3s;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: ease-in-out 0.3s;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #989376;
+  transition: ease-in-out 0.3s;
+}
+
+.scrollTop{
+  display: flex;
+  margin-left: 47%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  border: 1px;
+  margin-bottom: 1%;
+  width: 85px;
+}
